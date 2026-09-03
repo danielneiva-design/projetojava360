@@ -1,3 +1,4 @@
+package src;
 public class AlgoritmoTres {
     void main(){
         String nomeAluno = IO.readln("Digite o nome do aluno: ");
