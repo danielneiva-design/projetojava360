@@ -1,3 +1,5 @@
+package src;
+
 public class AlgoritmoDois {
     void main(String[] args) {
         IO.println("Seja bem-vindo ao portal Java 360!");
