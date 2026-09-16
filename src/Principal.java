@@ -7,6 +7,14 @@ public class Principal {
         //classe    obj at op construtor
         IO.println(objeto.getAloMundo());
         objeto.PrintarNaTela();
+        Algoritmo33Al objeto3 = new Algoritmo33Al();
+        objeto3.inserirChave(7);
+        IO.println(objeto3.retornarChave());
+        IO.println(objeto3.abrirPorta());
+        Algoritmo33Al objeto4 = new Algoritmo33Al();
+        objeto4.inserirChave(20);
+        IO.println(objeto4.retornarChave());        
+        IO.println(objeto4.abrirPorta());
     }
 
 public String mostrarSalaDoEco(String nome) {
