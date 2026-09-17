@@ -1,23 +1,20 @@
 public class ProgramaBanco {
     void main() {
         ContaBancaria conta1 = new ContaBancaria("João", "12345", 1000.0);
+        IO.println("Bem-vindo ao Banco!");
+        
+        IO.println("Titular: " + conta1.getNomeTitular());
+        IO.println("Número da conta: " + conta1.getNumeroConta());
         IO.println("Saldo inicial: " + conta1.getSaldo());
-        conta1.depositar(500.0);
-        IO.println("Depósito de R$ 500,00 recebido! \n Saldo atual: " + conta1.getSaldo());
-        conta1.sacar(200.0);
+        double valorDeposito = Double.parseDouble(IO.readln("Qual valor você deseja depositar na conta de " + conta1.getNomeTitular() + "?"));
+        conta1.depositar(valorDeposito);
+        IO.println("Depósito de R$ " + valorDeposito + " recebido! \n Saldo atual: " + conta1.getSaldo());
+        IO.println("Qual valor você deseja sacar da conta de " + conta1.getNomeTitular() + "?");
+        double valorSaque = Double.parseDouble(IO.readln("Qual valor você deseja sacar da conta de " + conta1.getNomeTitular() + "?"));
+        conta1.sacar(valorSaque);
         IO.println("Saldo após saque: " + conta1.getSaldo());
-
-        conta1.sacar(5000);
-        IO.println("Tentativa de saque de R$ 5000,00 falhou! \n Saldo atual: " + conta1.getSaldo());
-
-        ContaBancaria conta2 = new ContaBancaria("Maria", "67890", 2000.0);
-        IO.println("Saldo inicial: " + conta2.getSaldo());
-        conta2.depositar(1000.0);
-        IO.println("Depósito de R$ 1000,00 recebido! \n Saldo atual: " + conta2.getSaldo());
-        conta2.sacar(500.0);
-        IO.println("Saldo após saque: " + conta2.getSaldo());
-
-        conta2.sacar(15000);
-        IO.println("Tentativa de saque de R$ 15000,00 falhou! \n Saldo atual: " + conta2.getSaldo());
+        double valorSaque2 = Double.parseDouble(IO.readln("Deseja sacar mais algum valor? Digite abaixo " + conta1.getNomeTitular() + ":"));
+        conta1.sacar(valorSaque2);
+        IO.println("Saldo após saque: " + conta1.getSaldo());
     }
 }

@@ -15,6 +15,12 @@ public class Principal {
         objeto4.inserirChave(20);
         IO.println(objeto4.retornarChave());        
         IO.println(objeto4.abrirPorta());
+
+        Algoritmo34 objeto5 = new Algoritmo34();
+        objeto5.setPrimeiroNumero(10);
+        IO.println(objeto5.getPrimeiroNumero());
+        objeto5.setSegundoNumero(20);
+        IO.println(objeto5.getSegundoNumero());
     }
 
 public String mostrarSalaDoEco(String nome) {

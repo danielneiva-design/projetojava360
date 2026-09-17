@@ -8,6 +8,18 @@ public class ContaBancaria {
         numeroConta = NovoNumeroConta;
         saldo = novoSaldo;
     }
+    public String getNomeTitular() {
+        return titular;
+    }
+    public String getNumeroConta() {
+        return numeroConta;
+    }
+    public void setNomeTitular(String novoTitular) {
+        titular = novoTitular;
+    }
+    public void setNumeroConta(String NovoNumeroConta) {
+        numeroConta = NovoNumeroConta;
+    }
 
     public double getSaldo() {
         return saldo;
@@ -30,7 +42,10 @@ public class ContaBancaria {
     public void sacar(double valor) {
         if (valor > 0 && valor <= saldo) {
             saldo -= valor;
-        }
+        }else {
+        IO.println("Tentativa de saque no valor de " + valor + " falhou!"
+                + "\nSaldo atual: " + saldo);
+    }
     }
 
 }
