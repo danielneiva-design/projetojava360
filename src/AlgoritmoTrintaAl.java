@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoTrintaAl {
     public void main() {

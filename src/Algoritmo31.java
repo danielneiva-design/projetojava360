@@ -1,4 +1,4 @@
-package src;
+
 
 public class Algoritmo31 {
     public String getAloMundo() {

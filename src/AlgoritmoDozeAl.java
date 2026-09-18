@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoDozeAl {
     void main() {

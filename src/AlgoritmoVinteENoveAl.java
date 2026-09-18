@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoVinteENoveAl {
     public void main(){

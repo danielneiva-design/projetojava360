@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoCincoAl {
     void main() {

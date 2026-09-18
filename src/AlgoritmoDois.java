@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoDois {
     void main(String[] args) {

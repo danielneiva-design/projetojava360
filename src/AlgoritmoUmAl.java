@@ -1,4 +1,4 @@
-package src;
+
 
 public class AlgoritmoUmAl {
     public static void main(String[] args) {

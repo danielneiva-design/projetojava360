@@ -1,4 +1,4 @@
-package src;
+
 
 public class Algoritmo34 {
     //ENCAPSULAMENTO
@@ -10,8 +10,20 @@ public class Algoritmo34 {
 
     private int primeiroNumero;
     private int segundoNumero;
-
     public int getPrimeiroNumero() {
+        return primeiroNumero;
+    }
+    public void setPrimeiroNumero(int primeiroNumero) {
+        this.primeiroNumero = primeiroNumero;
+    }
+    public int getSegundoNumero() {
+        return segundoNumero;
+    }
+    public void setSegundoNumero(int segundoNumero) {
+        this.segundoNumero = segundoNumero;
+    }
+
+    /*public int getPrimeiroNumero() {
         return primeiroNumero;
     }
     public void setPrimeiroNumero(int PrimeiroNumero) {
@@ -22,6 +34,7 @@ public class Algoritmo34 {
     }
     public void setSegundoNumero(int SegundoNumero) {
         this.segundoNumero = SegundoNumero;
-    }
+    }*/
+   
   
 }
