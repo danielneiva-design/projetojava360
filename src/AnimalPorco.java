@@ -1,18 +1,21 @@
 import java.io.File;
-
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
-public class AnimalGato extends Animal {
-    public AnimalGato(String nome, String tocarSom, String comer) {
+public class AnimalPorco extends Animal {
+       
+    //No processo de herança, o construtor não é herdado, mas pode ser chamado através do super().
+    
+    public AnimalPorco(String nome, String tocarSom, String comer) {
         super(nome, tocarSom, comer);
     }
 
+    
     @Override
     public void arquivoSom() {
         try {
-            File arquivo = new File("src/miado2.wav");
+            File arquivo = new File("src/porco.wav");
 
             AudioInputStream audio =
                     AudioSystem.getAudioInputStream(arquivo);
@@ -20,7 +23,7 @@ public class AnimalGato extends Animal {
             Clip clip = AudioSystem.getClip();
             clip.open(audio);
 
-            IO.println("Gato miando...");
+            IO.println("Porco grunhindo...");
 
             clip.start();
 
@@ -33,9 +36,20 @@ public class AnimalGato extends Animal {
             IO.println("Erro ao reproduzir áudio: " + e);
         }
     }
-
     @Override
     public void comer() {
-        System.out.println("O gato " + getNome() + " come " + getComer());
+        IO.println("O porco está comendo.");
     }
+    
+
+
+        /*IO.println("***P O R C O***");
+        Animal Porco = new Animal("O porco se chama JAVA", "JAVA está grunhindo", "JAVA está comendo");
+        IO.println(Porco.getNome());
+        IO.println(Porco.getTocarSom());
+        IO.println(Porco.getComer());
+        */
+
+
 }
+

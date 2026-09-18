@@ -1,3 +1,9 @@
+import java.io.File;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 public class AnimalCachorro extends Animal {
        
     //No processo de herança, o construtor não é herdado, mas pode ser chamado através do super().
@@ -9,7 +15,27 @@ public class AnimalCachorro extends Animal {
     
     @Override
     public void arquivoSom() {
-        IO.println("O cachorro está latindo");
+        try {
+            File arquivo = new File("src/latido.wav");
+
+            AudioInputStream audio =
+                    AudioSystem.getAudioInputStream(arquivo);
+
+            Clip clip = AudioSystem.getClip();
+            clip.open(audio);
+
+            IO.println("Cachorro latindo...");
+
+            clip.start();
+
+            Thread.sleep(clip.getMicrosecondLength() / 1000);
+
+            clip.close();
+            audio.close();
+
+        } catch (Exception e) {
+            IO.println("Erro ao reproduzir áudio: " + e);
+        }
     }
     @Override
     public void comer() {

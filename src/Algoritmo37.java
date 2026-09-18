@@ -12,6 +12,7 @@ public class Algoritmo37 {
 
         AnimalCachorro c = new AnimalCachorro("Max", "Latido", "Ração");
         AnimalGato g = new AnimalGato("Tom", "Miau", "Ração");
+        AnimalPorco p = new AnimalPorco("JAVA", "Grunhido", "Ração");
         IO.println("O nome do cachorro é: " + c.getNome());
         
         c.arquivoSom();
@@ -19,6 +20,9 @@ public class Algoritmo37 {
         IO.println("O nome do gato é: " + g.getNome());
         g.arquivoSom();
         g.comer();
+        IO.println("O nome do porco é: " + p.getNome());
+        p.arquivoSom();
+        p.comer();
 
         //Tocar o som de verdade wav
         //
