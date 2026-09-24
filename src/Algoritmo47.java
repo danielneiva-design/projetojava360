@@ -11,16 +11,14 @@ public class Algoritmo47 {
         
         
         int soma = 0;
-        int contagem = 0;
         double media = 0;
 
         for(int i = 0; i < num.length; i++){
             num[i] = Integer.parseInt(IO.readln("Digite um número: "));
             soma += num[i];
-            contagem ++;
         }
         
-        media = (double)soma/contagem;
+        media = (double) soma / num.length;
         IO.print("Eis os números digitados: \n");
         for(int nums : num){
             IO.print(nums + " ");
