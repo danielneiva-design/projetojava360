@@ -16,7 +16,5 @@ public class Algoritmo45 {
                 //plural - coleção 
                 IO.println(tarefa);
             }
-            
-
     }
 }
