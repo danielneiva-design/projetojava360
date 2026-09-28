@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Algoritmo49 {
 
     /*
@@ -14,4 +17,34 @@ public class Algoritmo49 {
 
     */
 
+    public void main(){
+
+        List<String> laboratorios = new ArrayList<>();
+
+        int opcao;
+        int contador = 0;
+
+        
+        do{            
+            IO.println("1- Adicionar Laboratório\n2-Sair");
+            opcao = Integer.parseInt(IO.readln("Escolha a opção desejada:\n"));
+            if(opcao == 1){
+                String laboratorio = IO.readln("Qual laboratório quer adicionar?\nF03, F05, F07\n");
+                if(laboratorio.equals("F03") || laboratorio.equals("F05") || laboratorio.equals("F07")){
+                    laboratorios.add(laboratorio);
+                    contador++;
+                }else{
+                    IO.println("Você não pode acessar essa sala!");
+                };
+                
+                
+                }
+        
+        }
+        while(opcao != 2 && contador <= 2);
+        IO.println("Laboratórios adicionados: " + laboratorios);
+        IO.println("Número de laboratórios adicionados: " + laboratorios.size());
+
+    }
 }
+
