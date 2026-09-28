@@ -9,11 +9,13 @@ public class Algoritmo50 {
             IO.print(resultado);
         }catch(NumberFormatException e){
             //erro
+            //e.getMessage() -- quando estiver na web, use print() console()
             IO.println(e.getMessage() + "\nValor inválido! Digite um número:\n");
 
         }finally{
             //independente de dar certo ou errado
             //conclusão
+            //Janelinha Windows (do lado 'fn') "."
             IO.println("\nDeu tudo certo! Encerrando o sistema!");
 
         }
