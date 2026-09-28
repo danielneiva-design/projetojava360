@@ -31,7 +31,7 @@ public class Algoritmo51 {
                 }
 
             double resultado = numero1 / numero2;
-            JOptionPane.showMessageDialog(null, "Resultado da divisão:" + resultado, titulo, janelaAtencao);
+            JOptionPane.showMessageDialog(null, "Resultado da divisão:\n" + resultado, titulo, janelaAtencao);
             
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null,
