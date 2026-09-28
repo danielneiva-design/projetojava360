@@ -34,7 +34,8 @@ public class Algoritmo51 {
             JOptionPane.showMessageDialog(null, "Resultado da divisão:" + resultado, titulo, janelaAtencao);
             
         }catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(null,"Você só pode digitar números! Tente novamente.", titulo, janelaAtencao);            
+            JOptionPane.showMessageDialog(null,
+                                  "Você só pode digitar números! Tente novamente.", titulo, janelaAtencao);            
         }catch(IllegalArgumentException e){
             JOptionPane.showMessageDialog(null, e.getMessage(), titulo, janelaAtencao);            
         }finally{
