@@ -1,7 +1,8 @@
+import br.com.daniel.curso.poo.Carro;
+
 public class ProgramaCarro {
     void main(){
-        Carro carroDaniel =
-        new Carro("Porsche", "911 Carrera Turbo", 2023, "650 cv");
+        Carro carroDaniel = new Carro("Porsche", "911 Carrera Turbo", 2023, "650 cv");
         carroDaniel.ligar();
         for (int i = 0; i < 10; i++) {
             carroDaniel.acelerar();
