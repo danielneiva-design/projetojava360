@@ -1,0 +1,3 @@
+29/09/2026 09:42:28 - O FileWriter cria arquivos além de .txt?
+29/09/2026 09:43:02 - Os dados armazenados no arquivo do FileWriter podem ser utilizados em um banco de dados?
+29/09/2026 09:45:58 - Como entender CRUD?
