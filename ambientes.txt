@@ -1,0 +1,4 @@
+01/10/2026 12:01:59;G09;Oficina de lanternagem e pintura
+01/10/2026 12:01:59;B03;Sala de Aula Padrão
+01/10/2026 12:01:59;F07;Laboratório de programação Java
+01/10/2026 12:01:59;F09;Sala teste final
