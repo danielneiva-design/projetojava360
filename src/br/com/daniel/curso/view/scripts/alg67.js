@@ -5,4 +5,5 @@ frm.addEventListener("submit", (e) => {
     e.preventDefault();
     const nome = frm.nome.value;
     res.textContent = `Alô, ${nome}!`;
+    e.preventDefault();
 });
