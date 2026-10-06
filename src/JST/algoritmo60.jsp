@@ -23,11 +23,12 @@
                     double valorComida = Double.parseDouble(valorJantar);
                     double taxaGarcom = valorComida*0.10;
                     double valorTotal = valorComida + taxaGarcom;
+                    Locale brasil = Locale.of("pt", "BR");
                     %>
                 <div class="conta">
-                <p>O valor da sua conta é de <span class="moeda">R$</span> <%=String.format(Locale.of("pt", "BR"), "%.2f", valorComida)%></p>
-                <p>O valor da taxa de serviço (10%) é de <span class="moeda">R$</span> <%=String.format(Locale.of("pt", "BR"), "%.2f", taxaGarcom)%></p>
-                <p class="total">O valor total da<br>sua compra é de <span class="moeda">R$</span> <%=String.format(Locale.of("pt", "BR"), "%.2f", valorTotal)%></p>
+                <p>O valor da sua conta é de <span class="moeda">R$</span> <%=String.format(brasil, "%.2f", valorComida)%></p>
+                <p>O valor da taxa de serviço (10%) é de <span class="moeda">R$</span> <%=String.format(brasil, "%.2f", taxaGarcom)%></p>
+                <p class="total">O valor total da<br>sua compra é de <span class="moeda">R$</span> <%=String.format(brasil, "%.2f", valorTotal)%></p>
                     </div>
                 <% } %>
         </div>
